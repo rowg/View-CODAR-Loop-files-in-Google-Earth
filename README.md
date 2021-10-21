@@ -9,6 +9,8 @@ SeaSondeAcquisition displays the "current" transponder signal strength in its Sp
 
 The python3 script continuous_loop_to_kml.py remedies this by parsing the Loop file as it grows and writing the most recent transponder location to a .kml file. This .kml file can then be displayed in Google Earth (either on the processing computer or another computer on the same network). The result is a Google Earth placemark that moves around the APM route in synchronization with the Loop Diagnostics processing, making the Loop file generation more intuitive for the operator.
 
+![Earth_screenshot](looped_kml.png)
+
 ## How to use this script:
 
 1) continuous_loop_to_kml.py takes the path of a GPS file as its sole input argument. The GPS file can be a .gpx file, uploaded directly from your GPS, but this requires that the gpxpy python package be installed on your processing computer. If your processing computer does *not* have the gpxpy package installed, it will be necessary to convert the .gpx file to an ASCII file consisting of lines of the form 
